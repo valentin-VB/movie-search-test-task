@@ -2,6 +2,10 @@
   "name": "movie-search-test-task",
   "version": "0.1.0",
   "private": true,
+   "engines": {
+    "node": "16.13.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
