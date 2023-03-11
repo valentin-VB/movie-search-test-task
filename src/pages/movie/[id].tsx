@@ -22,8 +22,8 @@ function MovieDetails() {
           }}
         />
       </Link>
-      {data && data.Response === "True" && (
-        <Container sx={{ paddingTop: "30px" }}>
+      <Container sx={{ paddingTop: "30px" }}>
+        {data && data.Response === "True" && (
           <Box component="ul">
             <Typography component="h1" variant="h3">
               {data?.Title}
@@ -52,8 +52,11 @@ function MovieDetails() {
               )}
             </ListItem>
           </Box>
-        </Container>
-      )}
+        )}
+        {data && data.Response === "False" && (
+          <Typography>Oops, Something went wrong</Typography>
+        )}
+      </Container>
     </Container>
   );
 }

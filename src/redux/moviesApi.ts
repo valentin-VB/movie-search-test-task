@@ -3,7 +3,7 @@ const API_KEY = "877f343f";
 
 export const moviesApi = createApi({
   reducerPath: "moviesApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://www.omdbapi.com" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://www.omdbapi.com" }),
   endpoints: (builder) => ({
     getMoviesByTitle: builder.mutation({
       query: ({ query, page }: { query: string; page: number }) => ({
