@@ -47,13 +47,14 @@ export const MovieInfo = styled.div`
   justify-content: center;
   font-weight: 400;
   font-size: 22px;
-  background-color: rgba(232, 232, 232, 0.15);
+  background-color: rgba(232, 232, 232, 0.8);
   backdrop-filter: blur(2.5px);
+  padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
-  height: 10%;
+  height: 12%;
   right: 0;
   bottom: 0;
   color: white;

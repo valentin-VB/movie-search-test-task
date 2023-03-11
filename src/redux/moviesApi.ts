@@ -6,8 +6,8 @@ export const moviesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "http://www.omdbapi.com" }),
   endpoints: (builder) => ({
     getMoviesByTitle: builder.mutation({
-      query: ({query, page} : {query: string, page: number}) => ({
-        url: '',
+      query: ({ query, page }: { query: string; page: number }) => ({
+        url: "",
         params: {
           apikey: API_KEY,
           s: query,
@@ -16,15 +16,16 @@ export const moviesApi = createApi({
       }),
     }),
     getMovieDetails: builder.query({
-      query: ({id}) => ({
-        url: '',
+      query: ({ id }) => ({
+        url: "",
         params: {
           apikey: API_KEY,
           i: id,
         },
       }),
-    })
+    }),
   }),
 });
 
-export const { useGetMoviesByTitleMutation, useGetMovieDetailsQuery } = moviesApi;
+export const { useGetMoviesByTitleMutation, useGetMovieDetailsQuery } =
+  moviesApi;

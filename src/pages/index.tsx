@@ -2,7 +2,7 @@ import Head from 'next/head'
 import SearchForm from '@/components/SearchForm/SearchForm'
 import { DefToaster } from '@/components/Toaster'
 import MovieList from '@/components/MoviesList/MovieList';
-import { Box, Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 
 
 export default function Home() {
@@ -20,7 +20,6 @@ export default function Home() {
           <MovieList/>
           <DefToaster/>
         </Container>
-        
       </main>
     </>
   )
