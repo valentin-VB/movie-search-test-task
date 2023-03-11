@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useGetMoviesByTitleMutation } from "@/redux/moviesApi";
 import toast from "react-hot-toast";
 import {StyledInput } from '../SearchForm/SearchForm.styled'
-import { InputAdornment } from "@mui/material";
+import { InputAdornment, IconButton  } from "@mui/material";
 import Box from "@mui/material/Box";
 
 function SearchForm() {
@@ -49,8 +49,10 @@ function SearchForm() {
         id="search"
         placeholder="Search"
         InputProps={{
-            startAdornment:   <InputAdornment position="start">
-            <SearchIcon/>
+          startAdornment: <InputAdornment position="start">
+            <IconButton type="submit">
+              <SearchIcon />
+            </IconButton>
           </InputAdornment>,
            disableUnderline: true,
 

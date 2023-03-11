@@ -11,9 +11,9 @@ function MovieList() {
   console.log("data:", data);
 
   return (
-    data && (
+    data && data.Response === 'True' && (
       <List>
-              {data.Search.map(({ imdbID, Title, Poster, Year }: { imdbID: string, Title: string, Poster: string, Year: string}) => {
+        {data.Search.map(({ imdbID, Title, Poster, Year }: { imdbID: string, Title: string, Poster: string, Year: string}) => {
           return (
             <ListItem key={imdbID}>
               <Link href={`movie/${imdbID}`}>

@@ -1,7 +1,7 @@
 import { useGetMovieDetailsQuery } from "@/redux/moviesApi";
 import { useRouter } from "next/router";
 import { Box, Container, Typography } from "@mui/material";
-import { ListItem } from "./movie.styled";
+import { ListItem } from "../../components/MovieInfo/movie.styled";
 import MovieInfo from "@/components/MovieInfo/MovieInfo";
 
 function MovieDetails() {
